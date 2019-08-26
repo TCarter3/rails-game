@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'materialize-sass'
 
+
 group :development, :test do
   gem 'pry-rails'
 end
