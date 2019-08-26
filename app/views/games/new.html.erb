@@ -1,0 +1,13 @@
+<h1>Add a Game</h1>
+<hr/>
+<%= form_with(model: @game, local: true) do |f| %>
+    <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name, required: true %>
+    </div>
+    <div class="field">
+        <%= f.label :hours_played %>
+        <%= f.number_field :hours_played, required: true, placeholer: "Hours Played" %>
+    </div>
+    <%= f.submit %>
+    <% end %>

@@ -1,0 +1,17 @@
+<h1>Your Games</h1>
+<%= link_to "Add New Game", new_game_path %>
+<hr/>
+<ul>
+    <% @games.each do |game| %>
+        <li>
+            <%= game.name %> - <%= game.hours_played %>hrs. played |
+            <%= link_to "View Game", game_path(game) %>
+        </li>
+    <% end %>
+</ul>
+
+
+
+
+<%= button_to "LOGOUT", destroy_user_session_path, method: :delete %>
+
